@@ -67,18 +67,19 @@ public:
     Padre()
     {
     }
+    
     Padre(int num)
-    {
-        this->num = num;
-    }
+        {
+           this->num = num;
+        }
     int getNum()
-    {
-        return num;
-    }
+       {
+            return num;
+       }
     void setNum(int num)
-    {
-        this->num = num;
-    }
+      {
+           this->num = num;
+      }
 };
 
 class Hijo : public Padre
@@ -87,18 +88,18 @@ class Hijo : public Padre
         char letra;
 
     char getLetra()
-    {
-        return letra;
-    }
+      {
+           return letra;
+      }
     void setLetra(char letra)
-    {
-        this->letra = letra;
-    }
+      {
+           this->letra = letra;
+      }
     Hijo(int num, char letra)
-    {
-        setLetra(letra);
-        setNum(num);
-    }
+      {
+           setLetra(letra);
+           setNum(num);
+      }
 
 };
 
